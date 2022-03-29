@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Board Write</title>
+<link href="../css/common.css" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	/* Section */
+		#container{
+			height: 700px;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.header_menu{
+			width: 68%;
+		}
+		.section_name{
+			height: 100px;
+			width: 1200px;
+			text-align: center;
+			line-height: 120px;
+		}
+		.section_list{
+			height: 750px;
+			width: 1200px;
+			text-align: center;
+			border-spacing: 0px;
+			border-collapse: collapse;
+		}
+		.section_form{
+			margin-left: 130px;
+		}
+		.section_title{
+			width: 975px;
+			height: 30px;
+			margin-bottom: 5px;
+		}
+		.section_writer{
+			width: 975px;
+			height: 30px;
+			margin-bottom: 15px;
+		}
+		.section_submit{
+			float: right;
+			margin-right: 95px;
+		}
+		.form_bor{
+			border: 2px solid #0064af;
+		}
+		.sub{
+			width: 50px;
+			height: 25px;
+			line-height: 28px;
+			background-color: #0064af;
+			border-radius: 20px;
+			color: white;
+			border: none;
+		}
+		/* Footer */
+		#footer{
+			height: 0px;
+			width: 1200px;
+			margin: 0 auto;
+			margin-bottom: 100px;
+			padding: 30px 0;
+			border-top: 1px solid #dcdcdc;
+		}
+		.footer_logo{
+			float: left;
+		}
+		.footer_info > p{
+			font-size: 12px;
+			float: left;
+			color: #cccccc;
+			letter-spacing: 1px;
+			margin-left: 3%;
+		}
+		.footer_sns{
+			width: 9%;
+			float: left;
+			margin-left: 27%;
+		}
+		.footer_sns img{
+			margin-left: 5%;
+		}
+		.footer_mobile{
+			float: right;
+
+		}
+		.footer_mobile > a{
+			text-decoration: none;
+			font-size: 12px;
+			color: #cccccc;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Header -->
+		<header>
+			<div class="header_logo">
+				<a href="../index.html"><img alt="" src="../images/logo.png"></a>
+			</div>
+			<nav class="header_menu">
+				<ul>
+					<li class="menu"><a href="#">ABOUT</a></li>
+					<li class="menu"><a href="./Board_List.html">BOARD</a></li>
+					<li class="menu"><a href="#">ARTIST</a></li>
+					<li class="menu"><a href="#">ACTOR</a></li>
+					<li class="menu"><a href="#">TALENTS</a></li>
+					<li class="menu"><a id="audi" href="#">AUDITION</a></li>
+					<li class="menu"><a href="#">SHOP</a></li>
+				</ul>
+			</nav>
+			<div class="header_sub">
+				<a href="#"><img alt="" src="../images/ico_home.png"></a>
+				<a href="#"><img alt="" src="../images/ico_contact.png"></a>
+				<a class ="login" href="../board/Check.html">Join</a>
+			</div>
+		</header>
+
+	<!-- section -->
+	<section id="container">
+	<div class="section_name"><h2>Board Write</h2></div>
+	<!-- form 태그로 사용 입력 폼 (글 작성 페이지) 제목, 내용, 작성버튼 -->
+	<div class="section_form">
+	<form action="">
+	<div>
+	<input class="section_title form_bor" type="text" placeholder="제목 입력">
+	</div>
+	<div>
+	<input  class="section_writer form_bor" type="text" placeholder="작성자 입력">
+	</div>
+	<div>
+	<textarea class="form_bor" rows="20" cols="143" placeholder="내용 입력"></textarea>
+	</div>
+	<div class="section_submit">
+	<input class="sub" type="submit" value="작성">
+	</div>
+	</form>
+	</div>
+	</section>
+
+	<!-- Footer -->
+<footer id="footer">
+	<div class="footer_logo">
+		<img alt="" src="../images/logo_white.png">
+	</div>
+
+	<div class="footer_info">
+		<p>copyright(c) 2016 woollim entertainment all rights reserved<br>
+			14, World Cup buk-ro 23-gil, Mapo-gu, Seoul, Korea 03966</p>
+	</div>
+
+	<div class="footer_sns">
+	<a href="#"><img alt="" src="../images/ico_fb.png"></a>
+	<a href="#"><img alt="" src="../images/ico_tw.png"></a>
+	<a href="#"><img alt="" src="../images/ico_yt.png"></a>
+	</div>
+
+	<div class="footer_mobile">
+	<a href="#"><strong>Mobile</strong></a>
+	</div>
+</footer>
+</body>
+</html>

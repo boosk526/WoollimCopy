@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Join</title>
+<link href="../css/common.css" rel="stylesheet">
+	<style type="text/css">
+	/* Section */
+		#container{
+			height: 700px;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.section_name{
+			height: 100px;
+			width: 1200px;
+			text-align: center;
+			line-height: 120px;
+		}
+		.inp{
+			float: left;
+			width: 500px;
+			padding-left: 460px;
+		}
+		.inp > p{
+			margin-bottom: 30px;
+		}
+		.input{
+			height: 30px;
+			width: 300px;
+		}
+		#btn{
+			height: 30px;
+			width: 305px;
+			background-color: #0064af;
+			border: none;
+			border-radius: 30px;
+			color: white;
+		}
+		/* Footer */
+		#footer{
+			height: 0px;
+			width: 1200px;
+			margin: 0 auto;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			padding: 30px 0;
+			border-top: 1px solid #dcdcdc;
+		}
+		.footer_logo{
+			float: left;
+		}
+		.footer_info > p{
+			font-size: 12px;
+			float: left;
+			color: #cccccc;
+			letter-spacing: 1px;
+			margin-left: 3%;
+		}
+		.footer_sns{
+			width: 9%;
+			float: left;
+			margin-left: 27%;
+		}
+		.footer_sns img{
+			margin-left: 5%;
+		}
+		.footer_mobile{
+			float: right;
+
+		}
+		.footer_mobile > a{
+			text-decoration: none;
+			font-size: 12px;
+			color: #cccccc;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+	<header>
+		<div class="header_logo">
+			<a href="./index.html"><img alt="" src="../images/logo.png"></a>
+		</div>
+		<nav class="header_menu">
+			<ul>
+				<li class="menu"><a href="#">ABOUT</a></li>
+				<li class="menu"><a href="../board/Board_List.html">BOARD</a></li>
+				<li class="menu"><a href="#">ARTIST</a></li>
+				<li class="menu"><a href="#">ACTOR</a></li>
+				<li class="menu"><a href="#">TALENTS</a></li>
+				<li class="menu"><a id="audi" href="#">AUDITION</a></li>
+				<li class="menu"><a href="#">SHOP</a></li>
+			</ul>
+		</nav>
+		<div class="header_sub">
+			<a href="#"><img alt="" src="../images/ico_home.png"></a>
+			<a href="#"><img alt="" src="../images/ico_contact.png"></a>
+			<a class ="login" href="./board/Check.html">Join</a>
+		</div>
+	</header>
+
+	<!-- section -->
+	<section id="container">
+	<div class="section_name"><h2>Join</h2></div>
+		<div class="inp">
+			<p>ID<br><input id="id" class="input" type="text" placeholder=" 5글자 이상 10글자 미만"></p>
+			<p>PW<br><input id ="pw" class="input" type="password" placeholder=" 6글자 이상 14글자 미만"></p>
+			<p>PW<br><input id="repw" class="input" type="password" placeholder=" 비밀번호 확인"></p>
+			<div id="pwResult"></div>
+			<p>Name<br><input class="input" type="text"></p>
+			<div id="wri"></div>
+			<p>Phone<br><input class="input" type="text"></p>
+			<div id="wri2"></div>
+			<p>Email<br><input class="input" type="text"></p>
+			<div id="wri3"></div>
+			<input id="btn" type="button" value="JOIN" onclick="check">
+			</div>
+	</section>
+
+		<!-- Footer -->
+	<footer id="footer">
+		<div class="footer_logo">
+			<img alt="" src="../images/logo_white.png">
+		</div>
+
+		<div class="footer_info">
+			<p>copyright(c) 2016 woollim entertainment all rights reserved<br>
+				14, World Cup buk-ro 23-gil, Mapo-gu, Seoul, Korea 03966</p>
+		</div>
+
+		<div class="footer_sns">
+		<a href="#"><img alt="" src="../images/ico_fb.png"></a>
+		<a href="#"><img alt="" src="../images/ico_tw.png"></a>
+		<a href="#"><img alt="" src="../images/ico_yt.png"></a>
+		</div>
+
+		<div class="footer_mobile">
+		<a href="#"><strong>Mobile</strong></a>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+
+	var pw = document.getElementById("pw").value;
+	var repw = document.getElementById("repw").value;
+	var btn = document.getElementById("btn");
+	var pwResult = document.getElementById("pwResult");
+	var con = document.getElementById("pwResult");
+
+
+	function check() {
+
+		 if (pw.value != repw.value) {
+             alert("비밀번호와 확인이 일치하지 않습니다.");
+		}
+
+
+	}
+
+	</script>
+</body>
+</html>

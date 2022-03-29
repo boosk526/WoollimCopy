@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <link href="./css/common.css" rel="stylesheet">
+<title>울림엔터테인먼트 Copy</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+		*{margin:0; padding:0; font-family: 'Reem Kufi', sans-serif;}
+		/* Section */
+		#container{
+			height: 870px;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.section_mpo{
+			height: 580px;
+			width: 1200px;
+		}
+		.section_mpo > .fotorama{
+     		position: absolute;
+   	 	}
+
+		.section_box{
+			height: 260px;
+			width: 380px;
+			float: left;
+		}
+		.c1, .c2{
+			margin: 30px 30px 0 0;
+		}
+		.c3{
+			margin: 30px 0 0 0;
+		}
+		.box_title{
+			height: 38px;
+			width: 380px;
+			line-height: 38px;
+			margin-bottom: 10px;
+			border-bottom: solid 2px #0064af;
+		}
+		.box_box{
+			height: 213px;
+			width: 380px;
+			background-color: #f5f5f5;
+		}
+		.box_img{
+			position: absolute;
+		}
+		h3{
+			font-size: 12px;
+		}
+		.mv_info{
+			height: 46px;
+			width: 100%;
+			padding-left:5%;
+			line-height: 46px;
+			background-color: rgba(0,0,0,.7);
+			box-sizing: border-box;
+			position: relative;
+			margin-top: 177px;
+			font-size: 12px;
+			color: white;
+		}
+		.notice_li{
+			height: 30px;
+			width: 380px;
+			box-sizing: border-box;
+			padding-left: 15px;
+			line-height: 25px;
+			float: right;
+			border-bottom: 1px solid #cccccc;
+		}
+		.notice_li > ul{
+			list-style: none;
+		}
+		.notice_li > ul > li{
+			font-size: 12px;
+			margin-bottom: 15px;
+		}
+		.notice_li > ul > li > p{
+			float: right;
+			color: #cccccc;
+		}
+		.post > div > img{
+			float: right;
+		}
+		.post > p{
+			font-size: 12px;
+			float: left;
+			margin: 30px 0 0 30px;
+		}
+		/* Footer */
+		#footer{
+			height: 0px;
+			width: 1200px;
+			margin: 0 auto;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			padding: 30px 0;
+			border-top: 1px solid #dcdcdc;
+		}
+		.footer_logo{
+			float: left;
+		}
+		.footer_info > p{
+			font-size: 12px;
+			float: left;
+			color: #cccccc;
+			letter-spacing: 1px;
+			margin-left: 3%;
+		}
+		.footer_sns{
+			width: 9%;
+			float: left;
+			margin-left: 27%;
+		}
+		.footer_sns img{
+			margin-left: 5%;
+		}
+		.footer_mobile{
+			float: right;
+
+		}
+		.footer_mobile > a{
+			text-decoration: none;
+			font-size: 12px;
+			color: #cccccc;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- layout -->
+
+	<!-- Header -->
+	<header>
+		<div class="header_logo">
+			<a href="#"><img alt="" src="./images/logo.png"></a>
+		</div>
+		<nav class="header_menu">
+			<ul>
+				<li class="menu"><a href="#">ABOUT</a></li>
+				<li class="menu"><a href="./board/Board_List.html">BOARD</a></li>
+				<li class="menu"><a href="#">ARTIST</a></li>
+				<li class="menu"><a href="#">ACTOR</a></li>
+				<li class="menu"><a href="#">TALENTS</a></li>
+				<li class="menu"><a id="audi" href="#">AUDITION</a></li>
+				<li class="menu"><a href="#">SHOP</a></li>
+			</ul>
+		</nav>
+		<div class="header_sub">
+			<a href="#"><img alt="" src="./images/ico_home.png"></a>
+			<a href="#"><img alt="" src="./images/ico_contact.png"></a>
+			<a class ="login" href="./board/Check.html">Join</a>
+		</div>
+	</header>
+
+	<!-- Section -->
+	<section id="container">
+	<div class="section_mpo">
+		  <div class="fotorama" data-loop="true" data-autoplay="true" data-navposition="inside">
+			<img alt="" src="./images/lov_pmain.jpg">
+			<img alt="" src="./images/gol_pmain.jpg">
+			<img alt="" src="./images/roc_pmain.jpg">
+			<img alt="" src="./images/infi_pmain.jpg">
+			<img alt="" src="./images/kyu_pmain.png">
+			<img alt="" src="./images/woollim_pmain.jpg">
+    	</div>
+	</div>
+
+		<div class="section_box c1">
+		<div class="box_title">
+			<h3>NOTICE</h3>
+		</div>
+		<div class="notice_li">
+			<ul>
+				 <li>게시물이 없습니다. <p>></p> </li>
+			</ul>
+		</div>
+		</div>
+
+		<div class="section_box c2">
+			<div class="box_title">
+				<h3>MUSIC VIDEO</h3>
+			</div>
+			<div class="box_img">
+			<div><img alt="" src="./images/mv_gol.jpg" width="380px" height="213px"></div>
+			</div>
+			<div class="mv_info">
+				<p>[Golden Child] ONE(Lucid Dream)</p>
+			</div>
+			</div>
+		<div class="section_box c3">
+			<div class="box_title">
+				<h3>STAGE</h3>
+			</div>
+			<div class="box_box post">
+				<p>
+				인피니트<br>
+				2018 Infinite Fan meeting<br>
+				〈FOREVER〉<br>
+				<br>
+				<br>
+				2018.12.30 ~ 2018.12.31
+				<br>
+				<br>
+				고려대학교 화정체육관
+				</p>
+			<div>
+			<img alt="" src="./images/main_poster.jpg" height="213px">
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="footer_logo">
+			<img alt="" src="./images/logo_white.png">
+		</div>
+
+		<div class="footer_info">
+			<p>copyright(c) 2016 woollim entertainment all rights reserved<br>
+				14, World Cup buk-ro 23-gil, Mapo-gu, Seoul, Korea 03966</p>
+		</div>
+
+		<div class="footer_sns">
+		<a href="#"><img alt="" src="./images/ico_fb.png"></a>
+		<a href="#"><img alt="" src="./images/ico_tw.png"></a>
+		<a href="#"><img alt="" src="./images/ico_yt.png"></a>
+		</div>
+
+		<div class="footer_mobile">
+		<a href="#"><strong>Mobile</strong></a>
+		</div>
+	</footer>
+</body>
+</html>
